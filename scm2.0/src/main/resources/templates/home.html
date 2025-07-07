@@ -5,23 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        .container {
-            margin: auto;
-            width: 50%;
-            padding: 30px;
-            background: #e2e2e2;
-        }
-    </style>
+    <link rel="stylesheet" data-th-href="@{'/css/output.css'}"/>
 </head>
 
 <body>
-    <div class="container">
-        <h1 data-th-text="${name}"> Welcome to home page</h1>
+    <div class="bg-gray-200 w-1/2 p-4 mx-auto mt-4">
+        <h1 class="text-2 font-bold" data-th-text="${name}"> Welcome to home page</h1>
         <p>Force: <span data-th-text="${Force}"></span></p>
         <p>Comission Entry: <span data-th-text="${ComissionEntry}"></span> </p>
 
-        <a th:href="${web}"> INDIAN AIR FORCE</a>
+        <a data-th-href="${web}"> INDIAN AIR FORCE</a>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, sed itaque ut ipsum et cupiditate
             sapiente similique distinctio optio ab cum accusantium nobis? Odit quod delectus hic totam doloribus non
             dignissimos eum aspernatur explicabo illum ducimus, magnam adipisci et. Voluptatem magni repellendus ullam
