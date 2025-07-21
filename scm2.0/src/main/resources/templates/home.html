@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="stylesheet" data-th-href="@{'/css/output.css'}"/>
 </head>
 
 <body>
-    <div class="bg-gray-200 w-1/2 p-4 mx-auto mt-4">
-        <h1 class="text-2 font-bold" data-th-text="${name}"> Welcome to home page</h1>
-        <p>Force: <span data-th-text="${Force}"></span></p>
+    <div class="bg-gray-200 w-1/2 p-4 flex flex-col justify-center items-center space-y-3 mx-auto mt-4">
+        <h1 class="text-2xl font-bold" data-th-text="${name}"> Welcome to home page</h1>
+        <p class="text-xl text-gray-700">Force: <span data-th-text="${Force}"></span></p>
         <p>Comission Entry: <span data-th-text="${ComissionEntry}"></span> </p>
 
         <a data-th-href="${web}"> INDIAN AIR FORCE</a>
@@ -19,7 +20,13 @@
             sapiente similique distinctio optio ab cum accusantium nobis? Odit quod delectus hic totam doloribus non
             dignissimos eum aspernatur explicabo illum ducimus, magnam adipisci et. Voluptatem magni repellendus ullam
             molestiae sint, ad corrupti assumenda nostrum accusamus!</p>
+        <div>
+            <button class="px-3 py-3 rounded bg-blue-700 text-white hover:bg-blue-600">Click Here</button>
+        </div>
     </div>
+    <!-- Flowbite JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
